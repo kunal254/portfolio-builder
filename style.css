@@ -250,7 +250,6 @@ footer>div{
     }
     footer{
         flex-direction: column;
-        padding: 1rem;
     }
     footer>div{
         width: 100%;
