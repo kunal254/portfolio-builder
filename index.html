@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <link rel="stylesheet" href="ham.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- title and logos -->
+    <!-- <link rel="shortcut icon" href="./75-1-01.png" /> -->
+    <title>Portfolio</title>
+
+    <!-- scripts -->
+    <script src="app.js" defer></script>
+
+</head>
+
+<body class="m-0">
+    <header>
+        <img class="hero d-b" src="./hero.jpg" alt="hero">
+        <nav class="_container">
+            <a class="d-b" href="#">
+                <img style="height: 75px;" class="fit_img" src="./logo.png" alt="logo">
+            </a>
+
+            <ul class="site-navigation">
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <div class="hamburger-menu" onclick="bar()">
+                <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80"
+                    onclick="this.classList.toggle('active')">
+                    <path class="line top"
+                        d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                    <path class="line middle" d="m 70,50 h -40" />
+                    <path class="line bottom"
+                        d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" />
+                </svg>
+            </div>
+        </nav>
+        <div class="hero_content_wrap">
+            <div class="_container">
+                <div class="left_hero">
+                    <div>
+                        <h1>The Best <br>Portfoli Manager</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem
+                            maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien.
+                            Suspendisse cursus faucibus finibus.
+                        </p>
+                        <a class="cta_btn" href="#">Build Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section" id="templates">
+        <h1>Find the <span>perfect template</span><br>for your Portfoli</h1>
+        <div class="_container">
+            <div class="template_card">
+                <img src="./templates/profile1.jpg" alt="">
+            </div>
+            <div class="template_card">
+                <img src="./templates/profile2.jpg" alt="">
+            </div>
+            <div class="template_card">
+                <img src="./templates/profile3.jpg" alt="">
+            </div>
+            <div class="template_card">
+                <img src="./templates/profile4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="testinomials">
+        <span class="material-icons">format_quote</span>
+        <h3>Crevado is easiest way to showcase your work online. Love the clean minimal design - it looks very
+            professional!</h3>
+        <p>Tracy Simmons</p>
+
+    </section>
+
+
+    <footer>
+        <div>
+            <div class="flex_align">
+                <span class="material-icons">location_on</span>
+                <div>
+                    <span>21 Revolution Street</span>
+                    <h3>Paris, France</h3>
+                </div>
+            </div>
+            <div class="flex_align">
+                <span class="material-icons">call</span>
+                <h3>+1 555 123455</h3>
+            </div>
+            <div class="flex_align">
+                <span class="material-icons">mail</span>
+                <h3 style="color: #567ab6;">support@company.com</h3>
+            </div>
+        </div>
+
+        <div>
+            <h2>About the company</h2>
+            <p style="color: #909498;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus sapiente aperiam reiciendis, et quia fugiat impedit adipisci. Repellendus, laudantium quia!</p>
+            <div class="social_media">
+                <div class="social_icon">
+                    <img class="fit_img" src="./social/facebook.png" alt="facebook">
+                </div>
+                <div class="social_icon">
+                    <img class="fit_img" src="./social/twitter.png" alt="twitter">
+                </div>
+                <div class="social_icon">
+                    <img class="fit_img" src="./social/linkedin.png" alt="linkedin">
+                </div>
+                <div class="social_icon">
+                    <img class="fit_img" src="./social/github.png" alt="github">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

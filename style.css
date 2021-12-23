@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700);
+:root {
+    --primary_col: #611ce0;
+    --secondary-col: rgb(23, 28, 36);
+}
+
+body {
+    font-family: 'Raleway', sans-serif
+}
+h1 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+/* ==========
+    UTILIES
+    ========= */
+._container {
+    max-width: 1240px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+.m-0 {
+    margin: 0;
+}
+.d-b {
+    display: block;
+}
+.fit_img {
+    display: block;
+    height: 100%;
+}
+.flex_align {
+    display: flex;
+    align-items: center;
+}
+.cta_btn{
+    min-width: 210px;
+    border-radius: 20px;
+    color: #fff !important;
+    padding: .7em 1.1em;
+    background: linear-gradient(270deg, #6a68f8 0%, #611ce0 100%);
+}
+
+
+header{
+    position: relative;
+}
+.hamburger-menu {
+    display: none;
+}
+.hero {
+    width: 100%;
+    height: 700px;
+    object-position: 100% 50%;
+    object-fit: cover;
+}
+nav{
+    position: absolute;
+    inset: 0;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+nav._container{
+    padding: 20px;
+}
+nav .site-navigation {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.site-navigation li {
+    margin-left: 3em;
+}
+
+.site-navigation a {
+    white-space: nowrap;
+    font-size: 1.3em;
+}
+
+.current-menu-item a {
+    color: var(--primary_col);
+}
+
+/* =======
+    HERO
+    ====== */
+
+.hero_content_wrap {
+    position: absolute;
+    inset: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.left_hero {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left_hero h1 {
+    font-size: 3.75em;
+    font-weight: 500;
+}
+
+.left_hero p {
+    line-height: 2em;
+    margin-bottom: 3em;
+    /* font-weight: 300; */
+}
+@media (max-width: 1000px) {
+
+    .hamburger-menu {
+        display: block;
+    }
+    .site-navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        max-width: 300px;
+        margin: 0;
+        width: 70vw;
+        z-index: 999;
+        padding: 1em;
+        background: #d7d7d7;
+        transform: translateX(-332px);
+        flex-direction: column;
+        transition: 300ms;
+    }
+
+    .site-navigation li {
+        margin-left: 0;
+        padding: 1em;
+    }
+    .open {
+        transform: none;
+    }
+    .hero {
+        opacity: .8;
+    }
+    .left_hero {
+        width: 100%;
+    }
+}
+
+
+#templates{
+    font-family: cursive;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2em;
+}
+#templates ._container{
+    max-width: 1000px;
+    margin: 5rem auto
+}
+#templates h1{
+    margin: 2rem;
+}
+#templates h1>span{
+    color: var(--primary_col);
+}
+#templates>div{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0;
+}
+#templates .template_card{
+    border-radius: 2rem;
+    overflow: hidden;
+    grid-column: span 1;
+    transition: transform 200ms ease-out;
+    box-shadow: 5px 10px 5px grey;
+}
+.template_card img{
+    width: 100%;
+}
+#templates .template_card:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+
+
+#testinomials{
+    background-color: #6439e991;
+    display: grid;
+    place-items: center;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+#testinomials span{
+    font-size: 3em;
+}
+#testinomials h3{
+    margin: 0;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: monospace;
+    text-align: start;
+    padding: 3rem;
+    background-color: #282c2f;
+    color: white;
+}
+footer .flex_align{
+    margin: 1.5rem 0;
+}
+footer .flex_align h3{
+    margin: 0;
+}
+footer .flex_align .material-icons{
+    font-size: 1.2em;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #303636;
+    padding: 10px;
+
+}
+footer>div{
+    width: 40%;
+}
+
+.social_media{
+    display: flex;
+    align-items: center;
+}
+.social_media .social_icon{
+    margin-right: 10px;
+    margin-top: 15px;
+}
+
+@media (max-width: 750px) {
+    #templates .template_card{
+        grid-column: span 2;
+    }
+    footer{
+        flex-direction: column;
+    }
+    footer>div{
+        width: 100%;
+    }
+}
